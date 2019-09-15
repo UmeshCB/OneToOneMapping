@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="p1.Address" table="FMADDRESS">
+		<id name="addrid" type="int" column="addrid">
+		<generator class="increment"></generator>
+		</id>
+		<property name="lane"><column name="lane" /></property>
+		<property name="city"><column name="city" /></property>
+		<property name="state"><column name="state" /></property>
+		<property name="country"><column name="country" /></property>
+	</class>
+</hibernate-mapping>
